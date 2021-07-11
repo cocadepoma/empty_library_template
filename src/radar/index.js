@@ -1,0 +1,1 @@
+export { default as NivoRadar } from './NivoRadar.js';

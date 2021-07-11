@@ -52,6 +52,8 @@
   ],
   "dependencies": {
     "@nivo/bar": "^0.72.0",
-    "@nivo/core": "^0.72.0"
+    "@nivo/core": "^0.72.0",
+    "@nivo/radar": "^0.72.0",
+    "recharts": "^2.0.9"
   }
 }

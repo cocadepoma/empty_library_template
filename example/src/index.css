@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 3rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,4 +11,50 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.main-wrapper {
+  background-color: rgb(255, 255, 255);
+}
+
+.chart-wrapper {
+  background-color: rgba(236, 246, 255, 0.228);
+  height: 450px;
+  -webkit-box-shadow: 0px 2px 14px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 14px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 14px -7px rgba(0, 0, 0, 0.75);
+  min-width: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.chart-wrapper:hover {
+  transform: translate(0px, -1px);
+  -webkit-box-shadow: 0px 2px 14px -7px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 2px 14px -7px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 2px 14px -3px rgba(0, 0, 0, 0.55);
+}
+
+.main-chart-wrapper {
+  height: 500px;
+}
+
+@media (min-width: 768px) {
+  .chart-wrapper {
+    height: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-chart-wrapper {
+    height: 650px;
+    flex: 0 1 calc(50% - 1rem);
+    min-width: 0;
+  }
+
 }
